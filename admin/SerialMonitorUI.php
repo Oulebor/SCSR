@@ -47,9 +47,7 @@ namespace admin {
                 
                 <div class="main">
                 
-                    <div class="e-row">
-                        <div class="e-col-12 e-col-m-12">
-                            
+                    
                             <div id="terminal">
                                 <div class="terminal-logo">
         <pre>
@@ -71,14 +69,18 @@ _/ __ \|  |/ __ \/  __/     \|  |/    \\__   \ |  |
                                 </section>
                             </div>
                             
-                        </div>
-                    </div>
+                            
+                      
                     
                 </div>
                 <script type="text/javascript">
                 var socket;
         
                 function init() {
+                    
+                    
+                    $(function() { $("#terminal").draggable().resizable(); });
+                    
                     var host = "ws://192.168.0.157:1337";
                     try {
                         socket = new WebSocket(host);

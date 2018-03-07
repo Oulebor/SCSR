@@ -39,7 +39,9 @@ html, body, .main, .e-row, .e-col-12, .e-col-m-12
 }
 
 #command, #command input {
-
+    position: absolute;
+    bottom: 0;
+    width: auto;
     background: #1a1a1a;
     color: #fff;
     border: none;
